@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="App.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ekonomik Yön Testi</h2>
+    <button class="aneG" id="results" onclick="getResult()">Başla</button>
+    <div class="firstQuestion">
+        <p>1 - Kısa vadeli olayları planlamak, uzun vadeli olayları planlamaktan daha kârlıdır.</p>
+        <div class="buttons1">
+            <button class="right1" id="right1">Doğru</button>
+            <button class="wrong1" id="wrong1">Yanlış</button>
+        </div>
+    </div>
+    <div class="secondQuestion">
+        <p>2 - Ekonomide devlet yetkili bulunmamalıdır.</p>
+        <div class="buttons2">
+            <button class="right2" id="right2" type="radio">Doğru</button>
+            <button class="wrong2" id="wrong2" type="radio">Yanlış</button>
+        </div>
+    </div>
+    <div class="thirdQuestion">
+        <p>3 - Merkez bankası teknokrat bir kabineyle bağımsız yönetilmelidir.</p>
+        <div class="buttons3">
+            <button class="right3" id="right3">Doğru</button>
+            <button class="wrong3" id="wrong3">Yanlış</button>
+        </div>
+    </div>
+    <div class="fourthQuestion">
+        <p>4 - Devletin kendi şirketlerinin bulunması faydalıdır.</p>
+        <div class="buttons4">
+            <button class="right4" id="right4">Doğru</button>
+            <button class="wrong4" id="wrong4">Yanlış</button>
+        </div>
+    </div>
+    <div class="fifthQuestion">
+        <p>5 - Ekonomide yatırımcılara taviz tanınmalıdır.</p>
+        <div class="buttons5">
+            <button class="right5" id="right5">Doğru</button>
+            <button class="wrong5" id="wrong5">Yanlış</button>
+        </div>
+    </div>
+    <div class="sixthQuestion">
+        <p>6 - Devlet, sosyal devlet olmaktan çıkmalıdır.</p>
+        <div class="buttons6">
+            <button class="right6" id="right6">Doğru</button>
+            <button class="wrong6" id="wrong6">Yanlış</button>
+        </div>
+    </div>
+    <div class="seventhQuestion">
+        <p>7 - Devlet tarım ve endüstri alanlarında insanlara inisiyatifler tanımalıdır..</p>
+        <div class="buttons7">
+            <button class="right7" id="right7">Doğru</button>
+            <button class="wrong7" id="wrong7">Yanlış</button>
+        </div>
+    </div>
+    <div class="eightQuestion">
+        <p>8 - Ekonomi yönetiminde enflasyon faizin sonucudur.</p>
+        <div class="buttons8">
+            <button class="right8" id="right8">Doğru</button>
+            <button class="wrong8" id="wrong8">Yanlış</button>
+        </div>
+    </div>
+    <div class="ninethQuestion">
+        <p>9 - Bazı ırklar ekonomiye karışmaktan engellenmelidir.</p>
+        <div class="buttons9">
+            <button class="right9" id="right9">Doğru</button>
+            <button class="wrong9" id="wrong9">Yanlış</button>
+        </div>
+    </div>
+    <div class="tenthQuestion">
+        <p>10 - Irkımdan olmayan kişiler ucuz fiyata uzun saatler çalıştırılabilir.</p>
+        <div class="buttons10">
+            <button class="right10" id="right10">Doğru</button>
+            <button class="wrong10" id="wrong10">Yanlış</button>
+        </div>
+    </div>
+    <div class="eleventhQuestion">
+        <p>11 - İşçi sendikaları önemini yitirmiştir.</p>
+        <div class="buttons11">
+            <button class="right11" id="right11">Doğru</button>
+            <button class="wrong11" id="wrong11">Yanlış</button>
+        </div>
+    </div>
+    <div class="twelvthQuestion">
+        <p>12 - Çeşitli vakıflara devlet fon sağlayabilmelidir.</p>
+        <div class="buttons12">
+            <button class="right12" id="right12">Doğru</button>
+            <button class="wrong12" id="wrong12">Yanlış</button>
+        </div>
+    </div>
+    <div class="thirteenQuestion">
+        <p>13 - Ekonomik kriz gibi durumlarda sosyal hizmetlerden feragat edilmemelidir.</p>
+        <div class="buttons13">
+            <button class="right13" id="right13">Doğru</button>
+            <button class="wrong13" id="wrong13">Yanlış</button>
+        </div>
+    </div>
+    <div class="fourteenQuestion">
+        <p>14 - Ucuz işgücü için kaliteden ödün verilebilir.</p>
+        <div class="buttons14">
+            <button class="right14" id="right14" >Doğru</button>
+            <button class="wrong14" id="wrong14">Yanlış</button>
+        </div>
+    </div>
+    <div class="fifteenQuestion">
+        <p>15 - Politik yandaşlara verilen inisiyatifler gereklidir.</p>
+        <div class="buttons1">
+            <button class="right15" id="right15">Doğru</button>
+            <button class="wrong15" id="wrong15">Yanlış</button>
+        </div>
+    </div>
+    <div class="sixteenQuestion">
+        <p>16 - Ekonomide icraatten çok sadakat önemlidir.</p>
+        <div class="buttons16">
+            <button class="right16" id="right16">Doğru</button>
+            <button class="wrong16" id="wrong16">Yanlış</button>
+        </div>
+    </div>
+    <div class="seventeenQuestion">
+        <p>17 - Devlet bazı özel şirketlerde kendi hissesini alabilmelidir.</p>
+        <div class="buttons17">
+            <button class="right17" id="right17">Doğru</button>
+            <button class="wrong17" id="wrong17">Yanlış</button>
+        </div>
+    </div>
+    <div class="eighteenQuestion">
+        <p>18 - Üretim tesisleri devletleştirilmelidir.</p>
+        <div class="buttons18">
+            <button class="right18" id="right18">Doğru</button>
+            <button class="wrong18" id="wrong18">Yanlış</button>
+        </div>
+    </div>
+    <div class="nineteenQuestion">
+        <p>19 - Devlet basit hizmetleri özelleştirmelidir.</p>
+        <div class="buttons19">
+            <button class="right19" id="right19">Doğru</button>
+            <button class="wrong19" id="wrong19">Yanlış</button>
+        </div>
+    </div>
+    <div class="twentyQuestion">
+        <p>20 - Eğitim özelleştirilmiş bir alan olmalıdır.</p>
+        <div class="buttons20">
+            <button class="right20" id="right20">Doğru</button>
+            <button class="wrong20" id="wrong20">Yanlış</button>
+        </div>
+    </div>
+    
+    <p id="resultText"></p>
+    <p id="devletText"></p>
+</body>
+</html>
